@@ -1,0 +1,38 @@
+// Styles for activity
+.p-activity {
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        --height : 0;
+        position: relative;
+        margin: 16px 16px 0 16px;
+        padding-bottom: 12px;
+        color: inherit;
+        border-bottom: 2px solid currentColor;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+       
+    }
+
+    &__item-name {
+        flex: 1;
+    }
+
+    &__item-value {
+        flex: 0 0 100px;
+        text-align: right;
+    }
+
+    &__week {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+  
+}

@@ -1,0 +1,12 @@
+
+.a-icon {
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    display: inline-block;
+    &--dark{
+        color: #eddddd;
+    }
+    &--light{
+        color: #483f3f;
+    }
+}

@@ -1,0 +1,17 @@
+#root {
+  max-width: 100vw;
+  height:100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.dark{
+  background-image: radial-gradient(147% 114% at 50% 103%, #b2adad 5.3%, #9ba2a1 20.1%, #83959c 30.5%, #1c2a33 80%, #51575d 890%);
+  color: #eddddd;
+}
+.light{
+  /* background-color: #F4F2DE; */
+  background-image:radial-gradient(147% 114% at 50% 103%, #87c6c9 5.3%, #98c1bc 20.1%, #74aec2 30.5%, #c5d0d7 80%, #0b1117 890%);
+  color: #483f3f;
+
+}
+

@@ -1,0 +1,31 @@
+// Styles for schedule-list
+.m-schedule-list{
+    &__container{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 12px;
+        margin: 16px;
+        overflow-y: auto;
+    }
+    &--item{
+        height: 100px;
+        width: auto;
+        padding: 8px;
+        border-radius: 8px;
+        box-shadow: currentColor 0px 0px 1px 2px inset;
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin: 0;
+        }
+        &-left{
+            width: 200px;
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.m-search{
+    &--search-header{
+        border: 0.5px solid rgb(128, 107, 107);
+        border-radius: 20px;
+        padding: 2px 8px ;
+        background-color: rgb(160, 179, 179);
+        color: black;;
+        &:hover{
+
+        }
+    }
+}

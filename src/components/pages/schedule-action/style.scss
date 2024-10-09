@@ -1,0 +1,63 @@
+// Styles for schedule-action
+$dark-color:#b9b8be;
+$light-color:rgb(40, 69, 68);
+$dark-background-color:#424242;
+$light-background-color:white;
+$hover-dark-background-color:#d4d1e960;
+$hover-light-background-color:#59595e60;
+$radio-color:rgb(145, 172, 171);
+$radio-color-selected:rgb(27, 209, 58);
+
+.p-schedule-action {
+    &__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        gap: 14px;
+    }
+
+    &__action-mode {
+        margin: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+
+    &__repeat-type {
+        margin: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__radio-group {
+        // margin-right: 100px;
+    }
+
+
+    &__device {
+        margin: 12px;
+        display: flex;
+        
+        gap: 12px;
+
+        &-item {
+            height: 40px;
+            border-radius: 12px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 4px 6px;
+            color: inherit;
+            background-color: rgba(218, 210, 210, 0.531);
+            &--active{
+                box-shadow: rgb(57, 195, 35) 0px 0px 1px 2px inset;
+            }
+        }
+    }
+}

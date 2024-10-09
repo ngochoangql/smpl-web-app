@@ -1,0 +1,84 @@
+// Styles for bar-chart
+.m-bar-chart {
+
+    &__container {
+        
+        height: 220px;
+        position: relative;
+        border-width: 0 1px 1px 1px;
+        border-color: inherit;
+        border-style: solid;
+        margin: 55px;
+       
+    }
+
+    &__item {
+        --width: 0px;
+        --left: 0px;
+        --height: 0px;
+        position: absolute;
+        display: inline-block;
+        width: var(--width);
+        height: var(--height);
+        background-color: aqua;
+        bottom: 0;
+        left: var(--left);
+        animation-name: items;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        @keyframes items {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: var(--height);
+            }
+        }
+    }
+    
+
+}
+.axis-x{
+    &--label{
+        position: absolute;
+       
+        width: 100%;
+        left: 0px;
+        bottom: -40px;
+        height: 16px;
+        font-size: 12px;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+}
+.axis-y1{
+    &--label{
+        display:block;
+        position: absolute;
+        --bottom: 0px;
+        --width: 0px;
+        width: 50px;
+        left: -55px;
+        bottom: var(--bottom);
+        height: 16px;
+        font-size: 12px;
+        text-align: right;
+    }
+}
+.axis-y2{
+    &--label{
+        display:block;
+        position: absolute;
+        --bottom: 0px;
+        --width: 0px;
+        width: 50px;
+        right: -55px;
+        bottom: var(--bottom);
+        height: 16px;
+        font-size: 12px;
+        text-align: left;
+    }
+}

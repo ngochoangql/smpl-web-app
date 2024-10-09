@@ -1,0 +1,10 @@
+.m-input-field{
+    &__container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 8px;
+        padding: 4px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    }
+}

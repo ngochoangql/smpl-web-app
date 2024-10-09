@@ -1,0 +1,41 @@
+// Styles for weather
+.m-weather{
+    &__container{
+        width: auto;   
+        margin: 16px;
+        height: 100px;
+        color: inherit;
+        padding: 12px;
+        box-shadow: currentColor 0px 0px 1px 2px inset;
+        border-radius: 10px;
+        background-color: transparent;
+        display: flex;
+        text-align: start;
+
+    }
+    &__value{
+        
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 14px;
+        div > p {
+            margin: 0;
+        }
+    }
+    &-left , &-right {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__location{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: self-end;
+        justify-content: end;
+        flex-grow: 1;
+        font-size: 14px;
+    }
+}

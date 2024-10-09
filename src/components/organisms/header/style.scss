@@ -1,0 +1,19 @@
+.o-header{
+    &__container{
+        display: flex;
+        gap:20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__right{
+        display: flex;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .o-header__search{
+        display: none;
+    }
+    
+}

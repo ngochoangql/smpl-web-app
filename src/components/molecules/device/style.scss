@@ -1,0 +1,29 @@
+// Styles for device
+.m-device{
+    &__container{
+        min-width: 200px;
+        height: 120px;
+        border-radius: 12px;
+        color: inherit;
+        box-shadow: currentColor 0px 0px 1px 2px inset;
+        padding: 8px;
+        background-color: rgba(191, 202, 202, 0.371);
+        display: flex;
+        justify-content: space-between;
+    }
+    &--active{
+        background-color: rgba(28, 186, 70, 0.425);
+        
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+}

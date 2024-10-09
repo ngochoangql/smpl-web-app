@@ -1,0 +1,13 @@
+.m-form-login{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        border-radius: 12px;
+        padding: 16px;
+     
+        background-color: #ffffff33;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    }
+}

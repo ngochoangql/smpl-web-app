@@ -1,0 +1,45 @@
+$dark-color:#b9b8be;
+$light-color:rgb(40, 69, 68);
+$dark-background-color:#424242;
+$light-background-color:white;
+$hover-dark-background-color:#d4d1e960;
+$hover-light-background-color:#59595e60;
+$radio-color:rgb(145, 172, 171);
+$radio-color-selected:rgb(27, 209, 58);
+.m-switch{
+    &__container{
+        width: 60px;
+        height: 30px;
+        position: relative;
+    }
+    &__thumb{
+        width: calc(100% - 3.84px);
+        height: calc(100% - 3.84px);
+        border-radius: 800px;
+        border: 2px solid rgb(113, 107, 107);
+        
+        &--active{
+            background-color: #343131;
+        }
+        &-dark{
+            background-color: $light-background-color;
+        }
+        &-light{   
+            background-color: $dark-background-color;
+        }
+    }
+    &__track{
+        position: absolute;
+        width: 36%;
+        height: 72%;
+        bottom:14%;
+        left: 7%;
+        border-radius: 14px;
+        background-color: #b3c1bc;
+        transition: left 0.5s ease , background-color 0.2s ease;
+        &--active{
+            left: 57%;
+            background-color: #589361;
+        }
+    }
+}

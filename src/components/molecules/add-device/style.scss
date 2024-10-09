@@ -1,0 +1,51 @@
+// Styles for add-device
+.m-add-device{
+    &__container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0  ;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00000060;
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    &__dialog{
+        position: relative;
+        z-index: 200;
+        width: 350px;
+        height: 500px;
+        padding: 16px;
+        border-radius: 8px;
+        backdrop-filter: blur(2px);
+        background-color: rgba(51, 56, 56, 0.657) ;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        &-buttons{
+            position: absolute;
+            width: calc(100% - 32px);
+            display: flex;
+            justify-content: space-between;
+            bottom: 16px;
+            left: 16px;
+        }
+    }
+    &__device{
+        width: auto;
+        padding: 8px;
+        height: max-content;
+
+        border-radius: 8px;
+        background-color: rgb(112, 117, 110);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

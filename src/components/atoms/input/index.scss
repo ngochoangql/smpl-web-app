@@ -1,0 +1,36 @@
+.a-input{
+    color: inherit;
+    &--default{
+        border-radius: 8px;
+        padding: 8px;
+    }
+    &--login{
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 4px;
+        background-color: transparent;
+    }
+    &--search{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-radius: 8px;
+        padding: 8px;
+        font-size: 16px;
+    }
+    &--add-device{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 18px;
+        width: auto;
+        box-shadow: 0px 0px 4px white inset;
+    }
+    
+}
+.a-input::placeholder{
+    color: inherit;
+}

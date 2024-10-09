@@ -1,0 +1,8 @@
+// Styles for count-down
+.p-count-down{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

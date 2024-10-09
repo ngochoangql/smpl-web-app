@@ -1,0 +1,25 @@
+.o-side-bar{
+    &__container{
+        position: absolute;
+        background-color: rgba(67, 109, 109, 0.918);
+        height: 100%;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        transition: left 1s ease;
+        z-index: 1000;
+        &--active{
+            left: 0;
+        }
+    }
+    &__out-left{
+        position: absolute;
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        &--active{
+            visibility: visible;
+        }
+    }
+}

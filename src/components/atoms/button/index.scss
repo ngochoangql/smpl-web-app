@@ -1,0 +1,93 @@
+.a-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+    }
+
+    &--login {
+        border: none;
+        border-radius: 40px;
+        padding: 8px;
+        font-size: 16px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+        justify-content: center;
+        background-color: rgb(167, 166, 107);
+
+        &:hover {
+            background-color: rgb(218, 217, 162);
+        }
+    }
+
+    &--navigate {
+        border: none;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        padding: 8px;
+        font-size: 18px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    }
+
+    &--feature {
+        background-color: rgb(255, 255, 255);
+        border: none;
+        gap: 4px;
+
+        border-radius: 8px;
+        padding: 8px 4px;
+        font-size: 16px;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 80px;
+        // min-width: 25%;
+    }
+
+    &--weekend {
+        padding: 4px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        border: none;
+        border-radius: 40px;
+        background-color: rgb(196, 181, 181);
+
+        &--active {
+            background-color: rgb(44, 179, 80);
+        }
+    }
+    &--button-default{
+        margin: 0 16px;
+        padding: 12px 4px;   
+        width: auto;
+        justify-content: center;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+        background-color: rgb(99, 231, 103);
+    }
+    &--cancel{
+        border-radius: 8px;
+        border: none;
+        padding: 8px;
+        background-color: rgb(229, 56, 56);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        width: 47.5%;
+        justify-content: center;
+    }
+    &--accept{
+        border-radius: 8px;
+        border: none;
+        padding: 8px;
+        background-color: rgb(199, 187, 187);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 20px;
+        width: 47.5%;
+        justify-content: center;
+    }
+}

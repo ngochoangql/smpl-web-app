@@ -1,0 +1,36 @@
+$dark-color:#b9b8be;
+$light-color:rgb(40, 69, 68);
+$dark-background-color:#424242;
+$light-background-color:white;
+$hover-dark-background-color:#d4d1e960;
+$hover-light-background-color:#59595e60;
+$radio-color:rgb(145, 172, 171);
+$radio-color-selected:rgb(27, 209, 58);
+.m-radio{
+    &__container{
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+    &__out{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 2px solid $radio-color;
+        &--active{
+            border-color: $radio-color-selected;
+        }
+    }
+    &__in{
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        background-color: $radio-color;
+        &--active{
+            background-color: $radio-color-selected;
+        }
+    }
+}
